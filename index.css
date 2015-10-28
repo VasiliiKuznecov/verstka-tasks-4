@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=UnifrakturMaguntia);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic);
+
+html,
+body
+{
+    margin: 0;
+}
+
+header,
+main
+{
+    margin: 0 auto;
+    padding: 10px 0px;
+    width: 1600px;
+    background-color: #eee;
+}
+
+header
+{
+    text-align: center;
+}
+
+h1
+{
+    margin: 0;
+    padding: 10px 0;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 150px;
+    border-bottom: 5px solid black;
+}
+
+header h3
+{
+    margin: 0;
+    padding: 10px 0;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    border-bottom: 5px solid black;
+    word-spacing: 12px;
+}
+
+main
+{
+    font-size: 18px;
+    font-family: 'PT Mono', ;
+}
+
+.column1
+{
+    display: table-cell;
+    width: 700px;
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+.column2
+{
+    display: table-cell;
+    width: 500px;
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+.column3
+{
+    display: table-cell;
+    width: 400px;
+    padding: 10px;
+}
+
+h2
+{
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+.twoColumnText
+{
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-rule: 1px dotted black;
+    -webkit-column-rule: 1px dotted black;
+    -moz-column-rule: 1px dotted black;
+}
+
+.allColumns
+{
+    column-span: all;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border: 1px dotted black;
+    padding: 5px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+q
+{
+    font-style: italic;
+}
+
+img
+{
+    width: 100%;
+}
+
+.treeColumnText
+{
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-rule: 1px dotted black;
+    -webkit-column-rule: 1px dotted black;
+    -moz-column-rule: 1px dotted black;
+}
