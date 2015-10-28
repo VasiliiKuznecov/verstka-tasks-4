@@ -3,6 +3,8 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic);
+
 html,
 body
 {
@@ -16,7 +18,6 @@ main
     padding: 10px 0px;
     width: 1600px;
     max-width: 1600px;
-    background-color: #eee;
 }
 
 header
@@ -43,11 +44,6 @@ header h3
     word-spacing: 12px;
 }
 
-main
-{
-    font-family: 'PT Mono', ;
-}
-
 #normalSize:checked ~ main
 {
     font-size: 16px;
@@ -58,6 +54,55 @@ main
     font-size: 20px;
 }
 
+#lightTheme:checked ~ main,
+#lightTheme:checked ~ header
+{
+    color: #000;
+    background-color: #eee;
+}
+
+#lightTheme:checked ~ main .allColumns
+{
+    background-color: #ddd;
+}
+
+#lightTheme:checked ~ main .twoColumnText,
+#lightTheme:checked ~ main .treeColumnText
+{
+    column-rule: 1px dotted black;
+    -webkit-column-rule: 1px dotted black;
+    -moz-column-rule: 1px dotted black;
+}
+
+#darkTheme:checked ~ main,
+#darkTheme:checked ~ header
+{
+    color: #fff;
+    background-color: #000;
+}
+
+#darkTheme:checked ~ main .allColumns
+{
+    background-color: #222;
+}
+
+#darkTheme:checked ~ main .twoColumnText,
+#darkTheme:checked ~ main .treeColumnText
+{
+    column-rule: 1px dotted white;
+    -webkit-column-rule: 1px dotted white;
+    -moz-column-rule: 1px dotted white;
+}
+
+#PTMonoFont:checked ~ main
+{
+    font-family: 'PT Mono', ;
+}
+
+#ForumFont:checked ~ main
+{
+    font-family: 'Forum', cursive;
+}
 .column1
 {
     display: table-cell;
@@ -101,9 +146,6 @@ article {
     column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
-    column-rule: 1px dotted black;
-    -webkit-column-rule: 1px dotted black;
-    -moz-column-rule: 1px dotted black;
 }
 
 .allColumns
@@ -113,7 +155,6 @@ article {
     -moz-column-span: all;
     border: 1px dotted black;
     padding: 5px;
-    background-color: #ddd;
     text-align: center;
 }
 
@@ -132,9 +173,6 @@ img
     column-count: 3;
     -webkit-column-count: 3;
     -moz-column-count: 3;
-    column-rule: 1px dotted black;
-    -webkit-column-rule: 1px dotted black;
-    -moz-column-rule: 1px dotted black;
 }
 
 p
