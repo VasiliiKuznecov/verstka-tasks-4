@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic);
-
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
 html,
 body
 {
@@ -122,4 +122,14 @@ img
     column-rule: 1px dotted black;
     -webkit-column-rule: 1px dotted black;
     -moz-column-rule: 1px dotted black;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+article p:first-child::first-letter {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
 }
