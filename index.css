@@ -15,6 +15,7 @@ main
     margin: 0 auto;
     padding: 10px 0px;
     width: 1600px;
+    max-width: 1600px;
     background-color: #eee;
 }
 
@@ -44,14 +45,24 @@ header h3
 
 main
 {
-    font-size: 18px;
     font-family: 'PT Mono', ;
+}
+
+#normalSize:checked ~ main
+{
+    font-size: 16px;
+}
+
+#bigSize:checked ~ main
+{
+    font-size: 20px;
 }
 
 .column1
 {
     display: table-cell;
-    width: 700px;
+    width: 550px;
+    max-width: 550px;
     padding: 10px;
     border-right: 2px solid black;
 }
@@ -59,7 +70,8 @@ main
 .column2
 {
     display: table-cell;
-    width: 500px;
+    width: 450px;
+    max-width: 450px;
     padding: 10px;
     border-right: 2px solid black;
 }
@@ -67,7 +79,8 @@ main
 .column3
 {
     display: table-cell;
-    width: 400px;
+    width: 600px;
+    max-width: 600px;
     padding: 10px;
 }
 
@@ -127,6 +140,7 @@ img
 p
 {
     margin-top: 0;
+    hyphens: auto;
 }
 
 article p:first-child::first-letter {
