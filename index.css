@@ -1,9 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=UnifrakturMaguntia);
-@import url(https://fonts.googleapis.com/css?family=Special+Elite);
-@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Special+Elite|Rubik+Mono+One|PT+Mono|Lobster|Forum&subset=latin,cyrillic);
 
 html,
 body
@@ -179,6 +174,8 @@ p
 {
     margin-top: 0;
     hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto
 }
 
 article p:first-child::first-letter {
